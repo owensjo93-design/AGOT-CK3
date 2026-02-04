@@ -1,0 +1,887 @@
+﻿#Portraits
+is_character_arryn_3 = {
+	OR = {
+		has_inactive_trait = is_arryn_3
+		character:Arryn_3 ?= THIS
+	}
+}
+is_character_arryn_80 = {
+	OR = {
+		has_inactive_trait = is_arryn_80
+		character:Arryn_80 ?= THIS
+	}
+}
+is_character_baratheon_2 = {
+	OR = {
+		has_inactive_trait = is_baratheon_2
+		character:Baratheon_2 ?= THIS
+	}
+}
+is_character_baratheon_3 = {
+	OR = {
+		has_inactive_trait = is_baratheon_3
+		character:Baratheon_3 ?= THIS
+	}
+}
+is_character_baratheon_4 = {
+	OR = {
+		has_inactive_trait = is_baratheon_4
+		character:Baratheon_4 ?= THIS
+	}
+}
+is_character_baratheon_14 = {
+	OR = {
+		has_inactive_trait = is_baratheon_14
+		character:Baratheon_14 ?= THIS
+	}
+}
+is_character_baratheon_33 = {
+	OR = {
+		has_inactive_trait = is_baratheon_33
+		character:Baratheon_33 ?= THIS
+	}
+}
+is_character_blackfyre_3 = {
+	OR = {
+		has_inactive_trait = is_blackfyre_3
+		character:Blackfyre_3 ?= THIS
+	}
+}
+is_character_durrandon_88 = {
+	OR = {
+		has_inactive_trait = is_durrandon_88
+		character:Durrandon_88 ?= THIS
+	}
+}
+is_character_eunuch_1 = {
+	OR = {
+		has_inactive_trait = is_eunuch_1
+		character:Eunuch_1 ?= THIS
+	}
+}
+is_character_fossoway_7 = {
+	OR = {
+		has_inactive_trait = is_fossoway_7
+		character:Fossoway_7 ?= THIS
+	}
+}
+is_character_greyjoy_9 = {
+	OR = {
+		has_inactive_trait = is_greyjoy_9
+		character:Greyjoy_9 ?= THIS
+	}
+}
+is_character_greyjoy_13 = {
+	OR = {
+		has_inactive_trait = is_greyjoy_13
+		character:Greyjoy_13 ?= THIS
+	}
+}
+is_character_greyjoy_14 = {
+	OR = {
+		has_inactive_trait = is_greyjoy_14
+		character:Greyjoy_14 ?= THIS
+	}
+}
+is_character_hightower_90 = {
+	OR = {
+		has_inactive_trait = is_hightower_90
+		character:Hightower_90 ?= THIS
+	}
+}
+is_character_hightower_97 = {
+	OR = {
+		has_inactive_trait = is_hightower_97
+		character:Hightower_97 ?= THIS
+	}
+}
+is_character_lannister_1 = {
+	OR = {
+		has_inactive_trait = is_lannister_1
+		character:Lannister_1 ?= THIS
+	}
+}
+is_character_lannister_2 = {
+	OR = {
+		has_inactive_trait = is_lannister_2
+		character:Lannister_2 ?= THIS
+	}
+}
+is_character_lannister_6 = {
+	OR = {
+		has_inactive_trait = is_lannister_6
+		character:Lannister_6 ?= THIS
+	}
+}
+is_character_martell_9 = {
+	OR = {
+		has_inactive_trait = is_martell_9
+		character:Martell_9 ?= THIS
+	}
+}
+is_character_mormont_3 = {
+	OR = {
+		has_inactive_trait = is_mormont_3
+		character:Mormont_3 ?= THIS
+	}
+}
+is_character_redwyne_4 = {
+	OR = {
+		has_inactive_trait = is_redwyne_4
+		character:Redwyne_4 ?= THIS
+	}
+}
+is_character_reyne_46 = {
+	OR = {
+		has_inactive_trait = is_reyne_46
+		character:Reyne_46 ?= THIS
+	}
+}
+is_character_rogare_12 = {
+	OR = {
+		has_inactive_trait = is_rogare_12
+		character:Rogare_12 ?= THIS
+	}
+}
+is_character_roycegotm_1 = {
+	OR = {
+		has_inactive_trait = is_roycegotm_1
+		character:RoyceGOTM_1 ?= THIS
+	}
+}
+is_character_seaworth_2 = {
+	OR = {
+		has_inactive_trait = is_seaworth_2
+		character:Seaworth_2 ?= THIS
+	}
+}
+is_character_stark_1 = {
+	OR = {
+		has_inactive_trait = is_stark_1
+		character:Stark_1 ?= THIS
+	}
+}
+is_character_stark_3 = {
+	OR = {
+		has_inactive_trait = is_stark_3
+		character:Stark_3 ?= THIS
+	}
+}
+is_character_stark_66 = {
+	OR = {
+		has_inactive_trait = is_stark_66
+		character:Stark_66 ?= THIS
+	}
+}
+is_character_stark_86 = {
+	OR = {
+		has_inactive_trait = is_stark_86
+		character:Stark_86 ?= THIS
+	}
+}
+is_character_tall_1 = {
+	OR = {
+		has_inactive_trait = is_tall_1
+		character:Tall_1 ?= THIS
+	}
+}
+is_character_targaryen_1 = {
+	OR = {
+		has_inactive_trait = is_targaryen_1
+		character:Targaryen_1 ?= THIS
+	}
+}
+is_character_targaryen_3 = {
+	OR = {
+		has_inactive_trait = is_targaryen_3
+		character:Targaryen_3 ?= THIS
+	}
+}
+is_character_targaryen_50 = {
+	OR = {
+		has_inactive_trait = is_targaryen_50
+		character:Targaryen_50 ?= THIS
+	}
+}
+is_character_targaryen_51 = {
+	OR = {
+		has_inactive_trait = is_targaryen_51
+		character:Targaryen_51 ?= THIS
+	}
+}
+is_character_targaryen_52 = {
+	OR = {
+		has_inactive_trait = is_targaryen_52
+		character:Targaryen_52 ?= THIS
+	}
+}
+is_character_targaryen_79 = {
+	OR = {
+		has_inactive_trait = is_targaryen_79
+		character:Targaryen_79 ?= THIS
+	}
+}
+is_character_targaryen_81 = {
+	OR = {
+		has_inactive_trait = is_targaryen_81
+		character:Targaryen_81 ?= THIS
+	}
+}
+is_character_targaryen_82 = {
+	OR = {
+		has_inactive_trait = is_targaryen_82
+		character:Targaryen_82 ?= THIS
+	}
+}
+is_character_targaryen_83 = {
+	OR = {
+		has_inactive_trait = is_targaryen_83
+		character:Targaryen_83 ?= THIS
+	}
+}
+is_character_targaryen_85 = {
+	OR = {
+		has_inactive_trait = is_targaryen_85
+		character:Targaryen_85 ?= THIS
+	}
+}
+is_character_targaryen_88 = {
+	OR = {
+		has_inactive_trait = is_targaryen_88
+		character:Targaryen_88 ?= THIS
+	}
+}
+is_character_targaryen_90 = {
+	OR = {
+		has_inactive_trait = is_targaryen_90
+		character:Targaryen_90 ?= THIS
+	}
+}
+is_character_targaryen_91 = {
+	OR = {
+		has_inactive_trait = is_targaryen_91
+		character:Targaryen_91 ?= THIS
+	}
+}
+is_character_targaryen_92 = {
+	OR = {
+		has_inactive_trait = is_targaryen_92
+		character:Targaryen_92 ?= THIS
+	}
+}
+is_character_targaryen_94 = {
+	OR = {
+		has_inactive_trait = is_targaryen_94
+		character:Targaryen_94 ?= THIS
+	}
+}
+is_character_targaryen_95 = {
+	OR = {
+		has_inactive_trait = is_targaryen_95
+		character:Targaryen_95 ?= THIS
+	}
+}
+is_character_targaryen_96 = {
+	OR = {
+		has_inactive_trait = is_targaryen_96
+		character:Targaryen_96 ?= THIS
+	}
+}
+is_character_targaryen_97 = {
+	OR = {
+		has_inactive_trait = is_targaryen_97
+		character:Targaryen_97 ?= THIS
+	}
+}
+is_character_targaryen_102 = {
+	OR = {
+		has_inactive_trait = is_targaryen_102
+		character:Targaryen_102 ?= THIS
+	}
+}
+is_character_targaryen_103 = {
+	OR = {
+		has_inactive_trait = is_targaryen_103
+		character:Targaryen_103 ?= THIS
+	}
+}
+is_character_targaryen_104 = {
+	OR = {
+		has_inactive_trait = is_targaryen_104
+		character:Targaryen_104 ?= THIS
+	}
+}
+is_character_targaryen_108 = {
+	OR = {
+		has_inactive_trait = is_targaryen_108
+		character:Targaryen_108 ?= THIS
+	}
+}
+is_character_targaryen_110 = {
+	OR = {
+		has_inactive_trait = is_targaryen_110
+		character:Targaryen_110 ?= THIS
+	}
+}
+is_character_targaryen_119 = {
+	OR = {
+		has_inactive_trait = is_targaryen_119
+		character:Targaryen_119 ?= THIS
+	}
+}
+is_character_targaryen_122 = {
+	OR = {
+		has_inactive_trait = is_targaryen_122
+		character:Targaryen_122 ?= THIS
+	}
+}
+is_character_targaryen_127 = {
+	OR = {
+		has_inactive_trait = is_targaryen_127
+		character:Targaryen_127 ?= THIS
+	}
+}
+is_character_tyrell_8 = {
+	OR = {
+		has_inactive_trait = is_tyrell_8
+		character:Tyrell_8 ?= THIS
+	}
+}
+is_character_tyrell_14 = {
+	OR = {
+		has_inactive_trait = is_tyrell_14
+		character:Tyrell_14 ?= THIS
+	}
+}
+
+#Dragonriders
+is_character_targaryen_13_a = {
+	OR = {
+		has_inactive_trait = is_targaryen_13_a
+		character:Targaryen_13_A ?= THIS
+	}
+}
+is_character_targaryen_13 = {
+	OR = {
+		has_inactive_trait = is_targaryen_13
+		character:Targaryen_13 ?= THIS
+	}
+}
+is_character_targaryen_13_b = {
+	OR = {
+		has_inactive_trait = is_targaryen_13_b
+		character:Targaryen_13_B ?= THIS
+	}
+}
+is_character_targaryen_13_c = {
+	OR = {
+		has_inactive_trait = is_targaryen_13_c
+		character:Targaryen_13_C ?= THIS
+	}
+}
+is_character_targaryen_14 = {
+	OR = {
+		has_inactive_trait = is_targaryen_14
+		character:Targaryen_14 ?= THIS
+	}
+}
+is_character_targaryen_18 = {
+	OR = {
+		has_inactive_trait = is_targaryen_18
+		character:Targaryen_18 ?= THIS
+	}
+}
+is_character_targaryen_23 = {
+	OR = {
+		has_inactive_trait = is_targaryen_23
+		character:Targaryen_23 ?= THIS
+	}
+}
+is_character_targaryen_15 = {
+	OR = {
+		has_inactive_trait = is_targaryen_15
+		character:Targaryen_15 ?= THIS
+	}
+}
+is_character_targaryen_17 = {
+	OR = {
+		has_inactive_trait = is_targaryen_17
+		character:Targaryen_17 ?= THIS
+	}
+}
+is_character_targaryen_20 = {
+	OR = {
+		has_inactive_trait = is_targaryen_20
+		character:Targaryen_20 ?= THIS
+	}
+}
+is_character_targaryen_27 = {
+	OR = {
+		has_inactive_trait = is_targaryen_27
+		character:Targaryen_27 ?= THIS
+	}
+}
+is_character_targaryen_31 = {
+	OR = {
+		has_inactive_trait = is_targaryen_31
+		character:Targaryen_31 ?= THIS
+	}
+}
+is_character_targaryen_41 = {
+	OR = {
+		has_inactive_trait = is_targaryen_41
+		character:Targaryen_41 ?= THIS
+	}
+}
+is_character_targaryen_60 = {
+	OR = {
+		has_inactive_trait = is_targaryen_60
+		character:Targaryen_60 ?= THIS
+	}
+}
+is_character_targaryen_13_d = {
+	OR = {
+		has_inactive_trait = is_targaryen_13_d
+		character:Targaryen_13_D ?= THIS
+	}
+}
+is_character_targaryen_16 = {
+	OR = {
+		has_inactive_trait = is_targaryen_16
+		character:Targaryen_16 ?= THIS
+	}
+}
+is_character_targaryen_19 = {
+	OR = {
+		has_inactive_trait = is_targaryen_19
+		character:Targaryen_19 ?= THIS
+	}
+}
+is_character_targaryen_22 = {
+	OR = {
+		has_inactive_trait = is_targaryen_22
+		character:Targaryen_22 ?= THIS
+	}
+}
+is_character_targaryen_21 = {
+	OR = {
+		has_inactive_trait = is_targaryen_21
+		character:Targaryen_21 ?= THIS
+	}
+}
+is_character_targaryen_24 = {
+	OR = {
+		has_inactive_trait = is_targaryen_24
+		character:Targaryen_24 ?= THIS
+	}
+}
+is_character_targaryen_26 = {
+	OR = {
+		has_inactive_trait = is_targaryen_26
+		character:Targaryen_26 ?= THIS
+	}
+}
+is_character_targaryen_29 = {
+	OR = {
+		has_inactive_trait = is_targaryen_29
+		character:Targaryen_29 ?= THIS
+	}
+}
+is_character_targaryen_28 = {
+	OR = {
+		has_inactive_trait = is_targaryen_28
+		character:Targaryen_28 ?= THIS
+	}
+}
+is_character_targaryen_46 = {
+	OR = {
+		has_inactive_trait = is_targaryen_46
+		character:Targaryen_46 ?= THIS
+	}
+}
+is_character_velaryon_34 = {
+	OR = {
+		has_inactive_trait = is_velaryon_34
+		character:Velaryon_34 ?= THIS
+	}
+}
+is_character_targaryen_67 = {
+	OR = {
+		has_inactive_trait = is_targaryen_67
+		character:Targaryen_67 ?= THIS
+	}
+}
+is_character_targaryen_30 = {
+	OR = {
+		has_inactive_trait = is_targaryen_30
+		character:Targaryen_30 ?= THIS
+	}
+}
+is_character_targaryen_33 = {
+	OR = {
+		has_inactive_trait = is_targaryen_33
+		character:Targaryen_33 ?= THIS
+	}
+}
+is_character_targaryen_32 = {
+	OR = {
+		has_inactive_trait = is_targaryen_32
+		character:Targaryen_32 ?= THIS
+	}
+}
+is_character_targaryen_66 = {
+	OR = {
+		has_inactive_trait = is_targaryen_66
+		character:Targaryen_66 ?= THIS
+	}
+}
+is_character_targaryen_35 = {
+	OR = {
+		has_inactive_trait = is_targaryen_35
+		character:Targaryen_35 ?= THIS
+	}
+}
+is_character_hammer_1 = {
+	OR = {
+		has_inactive_trait = is_hammer_1
+		character:Hammer_1 ?= THIS
+	}
+}
+is_character_targaryen_36 = {
+	OR = {
+		has_inactive_trait = is_targaryen_36
+		character:Targaryen_36 ?= THIS
+	}
+}
+is_character_white_1 = {
+	OR = {
+		has_inactive_trait = is_white_1
+		character:White_1 ?= THIS
+	}
+}
+is_character_targaryen_47 = {
+	OR = {
+		has_inactive_trait = is_targaryen_47
+		character:Targaryen_47 ?= THIS
+	}
+}
+is_character_targaryen_59 = {
+	OR = {
+		has_inactive_trait = is_targaryen_59
+		character:Targaryen_59 ?= THIS
+	}
+}
+is_character_targaryen_45 = {
+	OR = {
+		has_inactive_trait = is_targaryen_45
+		character:Targaryen_45 ?= THIS
+	}
+}
+is_character_targaryen_61 = {
+	OR = {
+		has_inactive_trait = is_targaryen_61
+		character:Targaryen_61 ?= THIS
+	}
+}
+is_character_farseed_1 = {
+	OR = {
+		has_inactive_trait = is_farseed_1
+		character:Farseed_1 ?= THIS
+	}
+}
+is_character_targaryen_65 = {
+	OR = {
+		has_inactive_trait = is_targaryen_65
+		character:Targaryen_65 ?= THIS
+	}
+}
+is_character_targaryen_68 = {
+	OR = {
+		has_inactive_trait = is_targaryen_68
+		character:Targaryen_68 ?= THIS
+	}
+}
+is_character_targaryen_63 = {
+	OR = {
+		has_inactive_trait = is_targaryen_63
+		character:Targaryen_63 ?= THIS
+	}
+}
+is_character_velaryon_35 = {
+	OR = {
+		has_inactive_trait = is_velaryon_35
+		character:Velaryon_35 ?= THIS
+	}
+}
+is_character_velaryon_43 = {
+	OR = {
+		has_inactive_trait = is_velaryon_43
+		character:Velaryon_43 ?= THIS
+	}
+}
+is_character_targaryen_69 = {
+	OR = {
+		has_inactive_trait = is_targaryen_69
+		character:Targaryen_69 ?= THIS
+	}
+}
+is_character_targaryen_70 = {
+	OR = {
+		has_inactive_trait = is_targaryen_70
+		character:Targaryen_70 ?= THIS
+	}
+}
+is_character_targaryen_72 = {
+	OR = {
+		has_inactive_trait = is_targaryen_72
+		character:Targaryen_72 ?= THIS
+	}
+}
+is_character_targaryen_71 = {
+	OR = {
+		has_inactive_trait = is_targaryen_71
+		character:Targaryen_71 ?= THIS
+	}
+}
+is_character_targaryen_75 = {
+	OR = {
+		has_inactive_trait = is_targaryen_75
+		character:Targaryen_75 ?= THIS
+	}
+}
+is_character_targaryen_76 = {
+	OR = {
+		has_inactive_trait = is_targaryen_76
+		character:Targaryen_76 ?= THIS
+	}
+}
+is_character_targaryen_77 = {
+	OR = {
+		has_inactive_trait = is_targaryen_77
+		character:Targaryen_77 ?= THIS
+	}
+}
+is_character_targaryen_78 = {
+	OR = {
+		has_inactive_trait = is_targaryen_78
+		character:Targaryen_78 ?= THIS
+	}
+}
+is_character_targaryen_74 = {
+	OR = {
+		has_inactive_trait = is_targaryen_74
+		character:Targaryen_74 ?= THIS
+	}
+}
+is_character_targaryen_9 = {
+	OR = {
+		has_inactive_trait = is_targaryen_9
+		character:Targaryen_9 ?= THIS
+	}
+}
+is_character_varezys_1 = {
+	OR = {
+		has_inactive_trait = is_varezys_1
+		character:Varezys_1 ?= THIS
+	}
+}
+is_character_urnebar_1 = {
+	OR = {
+		has_inactive_trait = is_urnebar_1
+		character:Urnebar_1 ?= THIS
+	}
+}
+is_character_sonaryen_1 = {
+	OR = {
+		has_inactive_trait = is_sonaryen_1
+		character:Sonaryen_1 ?= THIS
+	}
+}
+is_character_mataeryon_1 = {
+	OR = {
+		has_inactive_trait = is_mataeryon_1
+		character:Mataeryon_1 ?= THIS
+	}
+}
+is_character_belaerys_1 = {
+	OR = {
+		has_inactive_trait = is_belaerys_1
+		character:Belaerys_1 ?= THIS
+	}
+}
+
+#Misc
+is_character_baelish_2 = {
+	OR = {
+		has_inactive_trait = is_baelish_2
+		character:Baelish_2 ?= THIS
+	}
+}
+is_character_baratheon_5 = {
+	OR = {
+		has_inactive_trait = is_baratheon_5
+		character:Baratheon_5 ?= THIS
+	}
+}
+is_character_baratheon_6 = {
+	OR = {
+		has_inactive_trait = is_baratheon_6
+		character:Baratheon_6 ?= THIS
+	}
+}
+is_character_baratheon_7 = {
+	OR = {
+		has_inactive_trait = is_baratheon_7
+		character:Baratheon_7 ?= THIS
+	}
+}
+is_character_belaerys_1 = {
+	OR = {
+		has_inactive_trait = is_belaerys_1
+		character:Belaerys_1 ?= THIS
+	}
+}
+is_character_blackfyre_1 = {
+	OR = {
+		has_inactive_trait = is_blackfyre_1
+		character:Blackfyre_1 ?= THIS
+	}
+}
+is_character_blackfyre_11 = {
+	OR = {
+		has_inactive_trait = is_blackfyre_11
+		character:Blackfyre_11 ?= THIS
+	}
+}
+is_character_blackfyre_14 = {
+	OR = {
+		has_inactive_trait = is_blackfyre_14
+		character:Blackfyre_14 ?= THIS
+	}
+}
+is_character_blackwater_1 = {
+	OR = {
+		has_inactive_trait = is_blackwater_1
+		character:Blackwater_1 ?= THIS
+	}
+}
+is_character_brightflame_8 = {
+	OR = {
+		has_inactive_trait = is_brightflame_8
+		character:Brightflame_8 ?= THIS
+	}
+}
+is_character_greyjoy_5 = {
+	OR = {
+		has_inactive_trait = is_greyjoy_5
+		character:Greyjoy_5 ?= THIS
+	}
+}
+is_character_greyjoy_6 = {
+	OR = {
+		has_inactive_trait = is_greyjoy_6
+		character:Greyjoy_6 ?= THIS
+	}
+}
+is_character_lannister_120 = {
+	OR = {
+		has_inactive_trait = is_lannister_120
+		character:Lannister_120 ?= THIS
+	}
+}
+is_character_lannister_7 = {
+	OR = {
+		has_inactive_trait = is_lannister_7
+		character:Lannister_7 ?= THIS
+	}
+}
+is_character_scaly_1 = {
+	OR = {
+		has_inactive_trait = is_scaly_1
+		character:Scaly_1 ?= THIS
+	}
+}
+is_character_seaworth_1 = {
+	OR = {
+		has_inactive_trait = is_seaworth_1
+		character:Seaworth_1 ?= THIS
+	}
+}
+is_character_stark_13 = {
+	OR = {
+		has_inactive_trait = is_stark_13
+		character:Stark_13 ?= THIS
+	}
+}
+is_character_stark_5 = {
+	OR = {
+		has_inactive_trait = is_stark_5
+		character:Stark_5 ?= THIS
+	}
+}
+is_character_stark_6 = {
+	OR = {
+		has_inactive_trait = is_stark_6
+		character:Stark_6 ?= THIS
+	}
+}
+is_character_stark_7 = {
+	OR = {
+		has_inactive_trait = is_stark_7
+		character:Stark_7 ?= THIS
+	}
+}
+is_character_targaryen_11 = {
+	OR = {
+		has_inactive_trait = is_targaryen_11
+		character:Targaryen_11 ?= THIS
+	}
+}
+is_character_targaryen_12 = {
+	OR = {
+		has_inactive_trait = is_targaryen_12
+		character:Targaryen_12 ?= THIS
+	}
+}
+is_character_targaryen_18 = {
+	OR = {
+		has_inactive_trait = is_targaryen_18
+		character:Targaryen_18 ?= THIS
+	}
+}
+is_character_targaryen_19 = {
+	OR = {
+		has_inactive_trait = is_targaryen_19
+		character:Targaryen_19 ?= THIS
+	}
+}
+is_character_targaryen_2 = {
+	OR = {
+		has_inactive_trait = is_targaryen_2
+		character:Targaryen_2 ?= THIS
+	}
+}
+is_character_targaryen_hh_10 = {
+	OR = {
+		has_inactive_trait = is_targaryen_hh_10
+		character:Targaryen_hh_10 ?= THIS
+	}
+}
+is_character_velaryon_44 = {
+	OR = {
+		has_inactive_trait = is_velaryon_44
+		character:Velaryon_44 ?= THIS
+	}
+}
+is_character_velaryon_5 = {
+	OR = {
+		has_inactive_trait = is_velaryon_5
+		character:Velaryon_5 ?= THIS
+	}
+}
+is_character_westerling_2 = {
+	OR = {
+		has_inactive_trait = is_westerling_2
+		character:Westerling_2 ?= THIS
+	}
+}

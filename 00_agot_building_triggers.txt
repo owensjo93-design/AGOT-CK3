@@ -1,0 +1,13 @@
+﻿agot_generic_is_special_building_enabled = {
+	custom_tooltip = {
+		text = SPECIAL_BUILDING_NOT_ENABLED_WHILE_NOT_HUMAN
+		county.holder = { is_human = yes }
+	}
+	custom_tooltip = {
+		text = SPECIAL_BUILDING_NOT_ENABLED_WHILE_RUIN
+		OR = {
+			NOT = { has_holding_type = ruin_holding }
+			has_building_with_flag = special_building_enabled_in_ruin_county
+		}
+	}
+}

@@ -1,0 +1,199 @@
+﻿agot_is_valid_lp_feudal_government_target = {
+	NOR = {
+		has_government = theocracy_government
+		government_has_flag = government_is_uninteractable
+		has_government = republic_government
+		has_government = kingsguard_government
+		government_has_flag = government_is_administrative
+	}
+	capital_province ?= { has_holding_type = castle_holding }
+	OR = {
+		any_held_title = {
+			OR = {
+				has_variable = is_lord_paramount
+				has_variable = is_paramountcy_realm
+			}
+		}
+		AND = {
+			has_variable = pre_war_liege
+			OR = {
+				var:pre_war_liege.primary_title ?= {
+					OR = {
+						has_variable = is_paramountcy_realm
+						has_variable = is_lord_paramount
+					}
+				}
+				var:pre_war_liege.liege.primary_title ?= {
+					OR = {
+						has_variable = is_paramountcy_realm
+						has_variable = is_lord_paramount
+					}
+				}
+				AND = {
+					var:pre_war_liege ?= { has_variable = pre_war_liege }
+					var:pre_war_liege.var:pre_war_liege.primary_title ?= {
+						OR = {
+							has_variable = is_paramountcy_realm
+							has_variable = is_lord_paramount
+						}
+					}
+				}
+			}
+		}
+		any_liege_or_above = {
+			OR = {
+				any_held_title = {
+					OR = {
+						has_variable = is_lord_paramount
+						has_variable = is_paramountcy_realm
+					}
+				}
+				AND = {
+					has_variable = pre_war_liege
+					OR = {
+						var:pre_war_liege.primary_title ?= {
+							OR = {
+								has_variable = is_paramountcy_realm
+								has_variable = is_lord_paramount
+							}
+						}
+						var:pre_war_liege.liege.primary_title ?= {
+							OR = {
+								has_variable = is_paramountcy_realm
+								has_variable = is_lord_paramount
+							}
+						}
+						AND = {
+							var:pre_war_liege ?= { has_variable = pre_war_liege }
+							var:pre_war_liege.var:pre_war_liege.primary_title ?= {
+								OR = {
+									has_variable = is_paramountcy_realm
+									has_variable = is_lord_paramount
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_is_valid_for_lp_feudal_govt_when_converting_from_admin = {
+	NOR = {
+		has_government = theocracy_government
+		government_has_flag = government_is_uninteractable
+		has_government = republic_government
+		has_government = kingsguard_government
+	}
+	capital_province ?= { has_holding_type = castle_holding }
+	OR = {
+		any_held_title = {
+			OR = {
+				has_variable = is_lord_paramount
+				has_variable = is_paramountcy_realm
+			}
+		}
+		AND = {
+			has_variable = pre_war_liege
+			OR = {
+				var:pre_war_liege.primary_title ?= {
+					OR = {
+						has_variable = is_paramountcy_realm
+						has_variable = is_lord_paramount
+					}
+				}
+				var:pre_war_liege.liege.primary_title ?= {
+					OR = {
+						has_variable = is_paramountcy_realm
+						has_variable = is_lord_paramount
+					}
+				}
+				AND = {
+					var:pre_war_liege ?= { has_variable = pre_war_liege }
+					var:pre_war_liege.var:pre_war_liege.primary_title ?= {
+						OR = {
+							has_variable = is_paramountcy_realm
+							has_variable = is_lord_paramount
+						}
+					}
+				}
+			}
+		}
+		any_liege_or_above = {
+			OR = {
+				any_held_title = {
+					OR = {
+						has_variable = is_lord_paramount
+						has_variable = is_paramountcy_realm
+					}
+				}
+				AND = {
+					has_variable = pre_war_liege
+					OR = {
+						var:pre_war_liege.primary_title ?= {
+							OR = {
+								has_variable = is_paramountcy_realm
+								has_variable = is_lord_paramount
+							}
+						}
+						var:pre_war_liege.liege.primary_title ?= {
+							OR = {
+								has_variable = is_paramountcy_realm
+								has_variable = is_lord_paramount
+							}
+						}
+						AND = {
+							var:pre_war_liege ?= { has_variable = pre_war_liege }
+							var:pre_war_liege.var:pre_war_liege.primary_title ?= {
+								OR = {
+									has_variable = is_paramountcy_realm
+									has_variable = is_lord_paramount
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_is_valid_pirate_government_target = {
+	is_landed = yes
+	NOR = {
+		has_government = theocracy_government
+		government_has_flag = government_is_uninteractable
+		has_government = republic_government
+		has_government = kingsguard_government
+		government_has_flag = government_is_administrative
+	}
+	capital_province ?= {
+		AND = {
+			geographical_region = world_stepstones
+			has_holding_type = pirate_den_holding
+		}
+	}
+}
+
+agot_is_valid_free_city_government_target = {
+	is_landed = yes
+	NOR = {
+		has_government = theocracy_government
+		government_has_flag = government_is_uninteractable
+		has_government = kingsguard_government
+	}
+	capital_province ?= {
+		OR = {
+			has_holding_type = city_holding
+			has_holding_type = castle_holding
+		}
+	}
+}
+
+agot_is_a_republic = {
+	OR = {
+		government_has_flag = government_is_free_city
+		has_government = republic_government
+	}
+}

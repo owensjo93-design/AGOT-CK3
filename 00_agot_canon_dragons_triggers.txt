@@ -1,0 +1,1047 @@
+﻿agot_canon_dragons_enabled = {
+	OR = {
+		has_game_rule = agot_canon_dragons_enabled
+		has_game_rule = agot_canon_dragons_enabled_traits
+	}
+}
+
+
+agot_has_canon_rider = {
+	OR = {
+		is_character_dragon_vermithrax = yes
+		is_character_dragon_anogaros = yes
+		is_character_dragon_balerion = yes
+		is_character_dragon_nessarion = yes
+		is_character_dragon_archonei = yes
+		is_character_dragon_meraxes = yes
+		is_character_dragon_vhagar = yes
+		is_character_dragon_quicksilver = yes
+		is_character_dragon_dreamfyre = yes
+		is_character_dragon_vermithor = yes
+		is_character_dragon_silverwing = yes
+		is_character_dragon_meleys = yes
+		is_character_dragon_caraxes = yes
+		is_character_dragon_sheepstealer = yes
+		is_character_dragon_sunfyre = yes
+		is_character_dragon_tessarion = yes
+		is_character_dragon_syrax = yes
+		is_character_dragon_seasmoke = yes
+		is_character_dragon_moondancer = yes
+		is_character_dragon_rhaena_1 = yes
+		is_character_dragon_shrykos = yes
+		is_character_dragon_morghul = yes
+		is_character_dragon_vermax = yes
+		is_character_dragon_arrax = yes
+		is_character_dragon_tyraxes = yes
+		is_character_dragon_stormcloud = yes
+		is_character_dragon_morning = yes
+		is_character_dragon_nightfyre = yes
+		is_character_dragon_drogon = yes
+		is_character_dragon_vassarion = yes
+		is_character_dragon_rovax = yes
+		is_character_dragon_neltharion = yes
+		is_character_dragon_pythax = yes
+		is_character_dragon_terrax = yes
+	}
+}
+
+agot_is_canon_rider = {
+	OR = {
+		is_character_targaryen_13_a = yes
+		is_character_targaryen_13 = yes
+		is_character_targaryen_13_b = yes
+		is_character_targaryen_13_c = yes
+		is_character_targaryen_14 = yes
+		is_character_targaryen_18 = yes
+		is_character_targaryen_23 = yes
+		is_character_targaryen_15 = yes
+		is_character_targaryen_17 = yes
+		is_character_targaryen_20 = yes
+		is_character_targaryen_27 = yes
+		is_character_targaryen_31 = yes
+		is_character_targaryen_41 = yes
+		is_character_targaryen_60 = yes
+		is_character_targaryen_13_d = yes
+		is_character_targaryen_16 = yes
+		is_character_targaryen_19 = yes
+		is_character_targaryen_22 = yes
+		is_character_targaryen_21 = yes
+		is_character_targaryen_24 = yes
+		is_character_targaryen_26 = yes
+		is_character_targaryen_29 = yes
+		is_character_targaryen_28 = yes
+		is_character_targaryen_46 = yes
+		is_character_velaryon_34 = yes
+		is_character_targaryen_67 = yes
+		is_character_targaryen_30 = yes
+		is_character_targaryen_33 = yes
+		is_character_targaryen_32 = yes
+		is_character_targaryen_66 = yes
+		is_character_targaryen_35 = yes
+		is_character_hammer_1 = yes
+		is_character_targaryen_36 = yes
+		is_character_white_1 = yes
+		is_character_targaryen_47 = yes
+		is_character_targaryen_59 = yes
+		is_character_targaryen_45 = yes
+		is_character_targaryen_61 = yes
+		is_character_farseed_1 = yes
+		is_character_targaryen_65 = yes
+		is_character_targaryen_68 = yes
+		is_character_targaryen_63 = yes
+		is_character_velaryon_35 = yes
+		is_character_velaryon_43 = yes
+		is_character_targaryen_69 = yes
+		is_character_targaryen_70 = yes
+		is_character_targaryen_72 = yes
+		is_character_targaryen_71 = yes
+		is_character_targaryen_75 = yes
+		is_character_targaryen_76 = yes
+		is_character_targaryen_77 = yes
+		is_character_targaryen_78 = yes
+		is_character_targaryen_74 = yes
+		is_character_targaryen_9 = yes
+		is_character_varezys_1 = yes
+		is_character_urnebar_1 = yes
+		is_character_sonaryen_1 = yes
+		is_character_mataeryon_1 = yes
+		is_character_belaerys_1 = yes
+	}
+}
+
+agot_has_canon_cradle_egg = {
+	OR = {
+		is_character_targaryen_13_b = yes
+		is_character_targaryen_13_d = yes
+		is_character_targaryen_21 = yes
+		is_character_targaryen_30 = yes
+		is_character_targaryen_35 = yes
+		is_character_targaryen_36 = yes
+		is_character_velaryon_35 = yes
+		is_character_targaryen_72 = yes
+		is_character_targaryen_71 = yes
+		is_character_targaryen_75 = yes
+		is_character_targaryen_76 = yes
+		is_character_targaryen_77 = yes
+		is_character_targaryen_78 = yes
+		is_character_targaryen_74 = yes
+		is_character_targaryen_69 = yes
+		is_character_targaryen_70 = yes
+		is_character_targaryen_9 = yes
+		is_character_belaerys_1 = yes
+	}
+}
+
+agot_is_canon_rider_dragon_pair = {
+	$RIDER$ = { save_temporary_scope_as = canon_rider }
+	$DRAGON$ = { save_temporary_scope_as = canon_dragon }
+	trigger_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_vermithrax = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_13_a = yes
+				is_character_targaryen_13 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_anogaros = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_13_b = yes
+				is_character_targaryen_14 = yes
+				is_character_targaryen_18 = yes
+				is_character_targaryen_23 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_balerion = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_15 = yes
+				is_character_targaryen_17 = yes
+				is_character_targaryen_20 = yes
+				is_character_targaryen_27 = yes
+				is_character_targaryen_31 = yes
+				is_character_targaryen_41 = yes
+				is_character_targaryen_60 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_nessarion = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_13_c = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_archonei = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_13_d = yes
+				is_character_targaryen_16 = yes
+				is_character_targaryen_19 = yes
+				is_character_targaryen_22 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_meraxes = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_21 = yes
+				is_character_targaryen_24 = yes
+				is_character_targaryen_26 = yes
+				is_character_targaryen_29 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_vhagar = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_28 = yes
+				is_character_targaryen_46 = yes
+				is_character_velaryon_34 = yes
+				is_character_targaryen_67 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_quicksilver = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_30 = yes
+				is_character_targaryen_33 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_dreamfyre = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_32 = yes
+				is_character_targaryen_66 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_vermithor = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_35 = yes
+				is_character_hammer_1 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_silverwing = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_36 = yes
+				is_character_white_1 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_meleys = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_47 = yes
+				is_character_targaryen_59 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_caraxes = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_45 = yes
+				is_character_targaryen_61 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_sheepstealer = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_farseed_1 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_sunfyre = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_65 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_tessarion = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_68 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_syrax = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_63 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_seasmoke = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_velaryon_35 = yes
+				is_character_velaryon_43 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_moondancer = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_69 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_rhaena_1 = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_70 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_shrykos = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_72 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_morghul = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_71 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_vermax = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_75 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_arrax = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_76 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_tyraxes = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_77 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_stormcloud = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_78 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_morning = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_70 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_nightfyre = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_74 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_drogon = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_targaryen_9 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_vassarion = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_varezys_1 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_rovax = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_urnebar_1 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_neltharion = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_sonaryen_1 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_pythax = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_mataeryon_1 = yes
+			}
+		}
+	}
+	trigger_else_if = {
+		limit = {
+			scope:canon_dragon = { is_character_dragon_terrax = yes }
+		}
+		scope:canon_rider = {
+			OR = {
+				is_character_belaerys_1 = yes
+			}
+		}
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+agot_is_valid_unpaired_canon_dragon_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	OR = {
+		agot_is_valid_vhagar_birth = { EGG = scope:temp_egg }
+		agot_is_valid_serporoth_birth = { EGG = scope:temp_egg }
+		agot_is_valid_cannibal_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_2_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_3_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_4_birth = { EGG = scope:temp_egg }
+		agot_is_valid_dreamfyre_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_6_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_5_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_7_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_8_birth = { EGG = scope:temp_egg }
+		agot_is_valid_meleys_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_9_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_10_birth = { EGG = scope:temp_egg }
+		agot_is_valid_maegor_11_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aenys_1_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aenys_2_birth = { EGG = scope:temp_egg }
+		agot_is_valid_caraxes_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aerea_1_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aerea_2_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aerea_3_birth = { EGG = scope:temp_egg }
+		agot_is_valid_sheepstealer_birth = { EGG = scope:temp_egg }
+		agot_is_valid_daenerys_1_birth = { EGG = scope:temp_egg }
+		agot_is_valid_grey_ghost_birth = { EGG = scope:temp_egg }
+		agot_is_valid_sunfyre_birth = { EGG = scope:temp_egg }
+		agot_is_valid_tessarion_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aemond_1_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aemond_2_birth = { EGG = scope:temp_egg }
+		agot_is_valid_aemond_3_birth = { EGG = scope:temp_egg }
+		agot_is_valid_syrax_birth = { EGG = scope:temp_egg }
+		agot_is_valid_the_last_birth = { EGG = scope:temp_egg }
+	}
+}
+
+agot_is_valid_vhagar_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:vhagar_birth_reserved }
+	current_date >= 7949.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_nessarion = yes }
+	}
+	NOT = { exists = character:dragon_vhagar }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_vhagar }
+		}
+	}
+}
+
+agot_is_valid_serporoth_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:serporoth_birth_reserved }
+	current_date >= 8009.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_meraxes = yes }
+	}
+	NOT = { exists = character:dragon_serporoth }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_serporoth }
+		}
+	}
+}
+
+agot_is_valid_cannibal_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:cannibal_birth_reserved }
+	current_date >= 8017.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_meraxes = yes }
+	}
+	NOT = { exists = character:dragon_cannibal }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_cannibal }
+		}
+	}
+}
+
+agot_is_valid_maegor_2_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_2_birth_reserved }
+	current_date >= 8022.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_serporoth = yes }
+	}
+	NOT = { exists = character:dragon_maegor_2 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_2 }
+		}
+	}
+}
+
+agot_is_valid_maegor_3_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_3_birth_reserved }
+	current_date >= 8022.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_serporoth = yes }
+	}
+	NOT = { exists = character:dragon_maegor_3 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_3 }
+		}
+	}
+}
+
+agot_is_valid_maegor_4_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_4_birth_reserved }
+	current_date >= 8024.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_serporoth = yes }
+	}
+	NOT = { exists = character:dragon_maegor_4 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_4 }
+		}
+	}
+}
+
+agot_is_valid_dreamfyre_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:dreamfyre_birth_reserved }
+	current_date >= 8029.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_vhagar = yes }
+	}
+	NOT = { exists = character:dragon_dreamfyre }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_dreamfyre }
+		}
+	}
+}
+
+agot_is_valid_maegor_6_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_6_birth_reserved }
+	current_date >= 8023.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_quicksilver = yes }
+	}
+	NOT = { exists = character:dragon_maegor_6 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_6 }
+		}
+	}
+}
+
+agot_is_valid_maegor_5_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_5_birth_reserved }
+	current_date >= 8030.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_quicksilver = yes }
+	}
+	NOT = { exists = character:dragon_maegor_5 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_5 }
+		}
+	}
+}
+
+agot_is_valid_maegor_7_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_7_birth_reserved }
+	current_date >= 8031.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_quicksilver = yes }
+	}
+	NOT = { exists = character:dragon_maegor_7 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_7 }
+		}
+	}
+}
+
+agot_is_valid_maegor_8_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_8_birth_reserved }
+	current_date >= 8031.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_quicksilver = yes }
+	}
+	NOT = { exists = character:dragon_maegor_8 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_8 }
+		}
+	}
+}
+
+agot_is_valid_meleys_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:meleys_birth_reserved }
+	current_date >= 8036.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_quicksilver = yes }
+	}
+	NOT = { exists = character:dragon_meleys }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_meleys }
+		}
+	}
+}
+
+agot_is_valid_maegor_9_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_9_birth_reserved }
+	current_date >= 8034.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_maegor_3 = yes }
+	}
+	NOT = { exists = character:dragon_maegor_9 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_9 }
+		}
+	}
+}
+
+agot_is_valid_maegor_10_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_10_birth_reserved }
+	current_date >= 8034.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_maegor_3 = yes }
+	}
+	NOT = { exists = character:dragon_maegor_10 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_10 }
+		}
+	}
+}
+
+agot_is_valid_maegor_11_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:maegor_11_birth_reserved }
+	current_date >= 8034.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_maegor_3 = yes }
+	}
+	NOT = { exists = character:dragon_maegor_11 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_maegor_11 }
+		}
+	}
+}
+
+agot_is_valid_aenys_1_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aenys_1_birth_reserved }
+	current_date >= 8038.10.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_maegor_6 = yes }
+	}
+	NOT = { exists = character:dragon_aenys_1 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aenys_1 }
+		}
+	}
+}
+
+agot_is_valid_aenys_2_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aenys_2_birth_reserved }
+	current_date >= 8038.10.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_maegor_6 = yes }
+	}
+	NOT = { exists = character:dragon_aenys_2 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aenys_2 }
+		}
+	}
+}
+
+agot_is_valid_caraxes_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:caraxes_birth_reserved }
+	current_date >= 8050.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_silverwing = yes }
+		var:dragon_parent_other ?= { is_character_dragon_vermithor = yes }
+	}
+	NOT = { exists = character:dragon_caraxes }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_caraxes }
+		}
+	}
+}
+
+agot_is_valid_aerea_1_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aerea_1_birth_reserved }
+	current_date >= 8052.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_dreamfyre = yes }
+	}
+	NOT = { exists = character:dragon_aerea_1 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aerea_1 }
+		}
+	}
+}
+
+agot_is_valid_aerea_2_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aerea_2_birth_reserved }
+	current_date >= 8052.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_dreamfyre = yes }
+	}
+	NOT = { exists = character:dragon_aerea_2 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aerea_2 }
+		}
+	}
+}
+
+agot_is_valid_aerea_3_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aerea_3_birth_reserved }
+	current_date >= 8054.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_dreamfyre = yes }
+	}
+	NOT = { exists = character:dragon_aerea_3 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aerea_3 }
+		}
+	}
+}
+
+agot_is_valid_sheepstealer_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:sheepstealer_birth_reserved }
+	current_date >= 8056.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_dreamfyre = yes }
+	}
+	NOT = { exists = character:dragon_sheepstealer }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_sheepstealer }
+		}
+	}
+}
+
+agot_is_valid_daenerys_1_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:daenerys_1_birth_reserved }
+	current_date >= 8059.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_dreamfyre = yes }
+	}
+	NOT = { exists = character:dragon_daenerys_1 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_daenerys_1 }
+		}
+	}
+}
+
+agot_is_valid_grey_ghost_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:grey_ghost_birth_reserved }
+	current_date >= 8087.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_silverwing = yes }
+		var:dragon_parent_other ?= { is_character_dragon_vermithor = yes }
+	}
+	NOT = { exists = character:dragon_grey_ghost }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_grey_ghost }
+		}
+	}
+}
+
+agot_is_valid_sunfyre_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:sunfyre_birth_reserved }
+	current_date >= 8088.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_silverwing = yes }
+		var:dragon_parent_other ?= { is_character_dragon_vermithor = yes }
+	}
+	NOT = { exists = character:dragon_sunfyre }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_sunfyre }
+		}
+	}
+}
+
+agot_is_valid_tessarion_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:tessarion_birth_reserved }
+	current_date >= 8100.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_silverwing = yes }
+		var:dragon_parent_other ?= { is_character_dragon_vermithor = yes }
+	}
+	NOT = { exists = character:dragon_tessarion }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_tessarion }
+		}
+	}
+}
+
+agot_is_valid_aemond_1_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aemond_1_birth_reserved }
+	current_date >= 8118.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_silverwing = yes }
+		var:dragon_parent_other ?= { is_character_dragon_vermithor = yes }
+	}
+	NOT = { exists = character:dragon_aemond_1 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aemond_1 }
+		}
+	}
+}
+
+agot_is_valid_aemond_2_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aemond_2_birth_reserved }
+	current_date >= 8118.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_silverwing = yes }
+		var:dragon_parent_other ?= { is_character_dragon_vermithor = yes }
+	}
+	NOT = { exists = character:dragon_aemond_2 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aemond_2 }
+		}
+	}
+}
+
+agot_is_valid_aemond_3_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:aemond_3_birth_reserved }
+	current_date >= 8119.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_silverwing = yes }
+		var:dragon_parent_other ?= { is_character_dragon_vermithor = yes }
+	}
+	NOT = { exists = character:dragon_aemond_3 }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_aemond_3 }
+		}
+	}
+}
+
+agot_is_valid_syrax_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:syrax_birth_reserved }
+	current_date >= 8087.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_meleys = yes }
+	}
+	NOT = { exists = character:dragon_syrax }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_syrax }
+		}
+	}
+}
+
+agot_is_valid_the_last_birth = {
+	$EGG$ = { save_temporary_scope_as = temp_egg }
+	NOT = { exists = scope:the_last_birth_reserved }
+	current_date >= 8148.1.1
+	scope:temp_egg = {
+		var:dragon_parent ?= { is_character_dragon_morning = yes }
+	}
+	NOT = { exists = character:dragon_the_last }
+	NOT = {
+		any_in_global_list = {
+			variable = gl_dragon_variable_storage
+			var:dragon_id ?= { has_inactive_trait = is_dragon_the_last }
+		}
+	}
+}

@@ -1,0 +1,156 @@
+﻿agot_can_visit_house_of_baw = {
+	OR = {
+		faith = {
+			has_doctrine = tenet_many_faces
+		}
+		AND = {
+			is_landed = yes
+			capital_province = {
+				geographical_region = world_essos_braavos
+			}
+		}
+		location = {
+			geographical_region = world_essos_braavos
+		}
+	}
+}
+
+agot_should_be_knight_idle_trigger = {
+	portrait_wear_armor_trigger = yes
+	OR = {
+		AND = {
+			portrait_wear_armor_trigger = yes
+			is_at_war = no
+		}
+		is_at_war = yes
+		AND = {
+			is_knight = yes
+			liege = {
+				is_at_war = yes
+			}
+		}
+	}
+}
+
+is_valid_paramountcy_realm = {
+	primary_title.tier = tier_empire
+	any_held_title = {
+		has_variable = is_paramountcy_realm
+	}
+}
+
+agot_wall_is_normal = {
+	has_variable = agot_wall_is_normal
+	NOR = {
+		agot_wall_has_fallen_left = yes
+		agot_wall_has_fallen_middle = yes
+		agot_wall_has_fallen_right = yes
+	}
+}
+
+agot_wall_has_fallen_left = {
+	has_variable = agot_wall_has_fallen_left
+}
+
+agot_wall_has_fallen_middle = {
+	has_variable = agot_wall_has_fallen_middle
+}
+
+agot_wall_has_fallen_right = {
+	has_variable = agot_wall_has_fallen_right
+}
+
+agot_KL_is_normal = {
+	NOT = {
+		has_variable = agot_KL_is_burning
+	}
+}
+
+#MW Compatible
+agot_is_independent_ruler = {
+	custom_description = {
+		text = "is_independent_ruler"
+		AND = {
+			is_independent_ruler = yes
+			NOT = { has_variable = pre_war_liege }
+			NOT = { has_character_flag = bookmark_independent }
+		}
+	}
+}
+# For whenever someone needs a conventional check for independence, like petition liege/pay homage
+is_vanilla_independent_ruler = {
+	is_independent_ruler = yes
+}
+
+agot_has_historical_events_trigger = {
+	OR = {
+		has_game_rule = agot_story_historical_events_historical_outcomes
+		has_game_rule = agot_story_historical_events_weighted_outcomes
+		has_game_rule = agot_story_historical_events_random_outcomes
+	}
+}
+
+is_available_prisoner_for_sacrifice = {
+	is_ai = yes
+	is_adult = yes
+	is_human = yes
+	is_incapable = no
+}
+
+agot_any_available_family_for_sacrifice = {
+	OR = {
+		any_courtier = {
+			is_available_ai = yes
+			is_close_family_of = root
+			NOT = { has_relation_soulmate = root }
+		}
+		any_prisoner = {
+			is_ai = yes
+			is_human = yes
+			is_close_family_of = root
+			NOT = { has_relation_soulmate = root }
+		}
+	}
+}
+
+agot_has_throne_room = {
+	OR = {
+		capital_county = title:c_kings_landing
+		capital_county = title:c_pyke
+		capital_county = title:c_casterly_rock
+		capital_county = title:c_dragonstone
+		capital_county = title:c_highgarden
+		capital_county = title:c_winterfell
+		capital_county = title:c_the_eyrie
+		capital_county = title:c_riverrun
+		capital_county = title:c_storms_end
+	}
+}
+
+agot_death_can_start_feud_trigger = {
+	$VICTIM$ = { save_temporary_scope_as = victim }
+	trigger_if = {
+		limit = {
+			exists = scope:victim
+			exists = scope:victim.killer
+			OR = {
+				scope:victim.killer ?= { has_dead_character_flag = should_not_start_feud }
+				scope:victim ?= { has_dead_character_flag = should_not_start_feud }
+			}
+		}
+		always = no
+	}
+	trigger_else = {
+		always = yes
+	}
+}
+
+agot_can_form_lord_paramountcy = {
+	NOT = { exists = holder }
+	any_de_jure_county = {
+		percent > 0.5
+		holder.top_liege = scope:king
+	}
+	title_capital_county.holder.top_liege = scope:king
+	NOT = { title_capital_county.holder = scope:king }
+}
